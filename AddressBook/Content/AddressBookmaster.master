@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AddressBookmaster.master.cs" Inherits="Content_AddressBookmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/MyCss.css" rel="stylesheet" />
+    <script src="~/Content/JS/bootstrap.js"></script>
+
+    <asp:ContentPlaceHolder id="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div class="container">
+        <div class="row header">
+             <div class="col-md-5">
+                 <br />
+                <asp:Image ID="imglogo" runat ="server" ImageUrl="https://www.darshan.ac.in/Content/media/DU-logo.svg" />
+            </div>
+            <div class="col-md-7">
+                <h1>AddressBook</h1>
+            </div>
+        </div>
+        <div class="row header text-center">
+           <div class="col-md-12">
+                <asp:HyperLink ID="h1Country" runat="server" Text="Country" NavigateUrl="~/AdminPanel/Country/CountryList.aspx" />
+                &nbsp;&nbsp; | &nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" Text="State" NavigateUrl="~/AdminPanel/State/StateList.aspx" />
+                &nbsp;&nbsp; | &nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" Text="City" NavigateUrl="~/AdminPanel/City/CityList.aspx" />
+                &nbsp;&nbsp; | &nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink3" runat="server" Text="ContactCategory" NavigateUrl="~/AdminPanel/ContactCategory/ContactCategoryList.aspx" />
+                &nbsp;&nbsp; | &nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink4" runat="server" Text="Contact" NavigateUrl="~/AdminPanel/Contact/ContactList.aspx" />
+            </div>
+         </div>
+        <hr style="border-top: 1px solid black"/>
+        <div class="row">
+            <div class="col-md-12">
+                  <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+                  </asp:ContentPlaceHolder>
+            </div>
+        </div>
+         <hr style="border-top: 1px solid black"/>
+        <div class="row footer">
+            <div class="col-md-12 text-center">
+                <h2>Rudra Hirdekar || 190540107074 || 190540107074@darshan.ac.in </h2>
+            </div>
+        </div>
+
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+.header{
+    background-color: #eacaca;
+}
+.header A{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.header A:hover{
+    color: #0026ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.footer{
+    background-color: #eacaca;
+}
+
+
